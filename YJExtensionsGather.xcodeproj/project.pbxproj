@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63A5B7791E7A5557006EA999 /* demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A5B7761E7A5557006EA999 /* demo.swift */; };
 		63B5685E1E7A3E0400B2115E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5685D1E7A3E0400B2115E /* AppDelegate.swift */; };
 		63B568601E7A3E0400B2115E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5685F1E7A3E0400B2115E /* ViewController.swift */; };
 		63B568631E7A3E0400B2115E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B568611E7A3E0400B2115E /* Main.storyboard */; };
 		63B568651E7A3E0400B2115E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B568641E7A3E0400B2115E /* Assets.xcassets */; };
 		63B568681E7A3E0400B2115E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B568661E7A3E0400B2115E /* LaunchScreen.storyboard */; };
+		63BC9C831E7A579D006CA13A /* UIKitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC9C821E7A579D006CA13A /* UIKitDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63A5B7761E7A5557006EA999 /* demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demo.swift; sourceTree = "<group>"; };
 		63B5685A1E7A3E0400B2115E /* YJExtensionsGather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJExtensionsGather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B5685D1E7A3E0400B2115E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B5685F1E7A3E0400B2115E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63B568621E7A3E0400B2115E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		63B568641E7A3E0400B2115E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63B568641E7A3E0400B2115E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		63B568671E7A3E0400B2115E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		63B568691E7A3E0400B2115E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B568691E7A3E0400B2115E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		63BC9C821E7A579D006CA13A /* UIKitDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,9 +39,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63A5B7731E7A552C006EA999 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				63B568611E7A3E0400B2115E /* Main.storyboard */,
+				63B568641E7A3E0400B2115E /* Assets.xcassets */,
+				63B568661E7A3E0400B2115E /* LaunchScreen.storyboard */,
+				63B568691E7A3E0400B2115E /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		63A5B7741E7A5557006EA999 /* YJExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				63A5B7751E7A5557006EA999 /* Foundation */,
+				63A5B7771E7A5557006EA999 /* UIKit */,
+			);
+			path = YJExtensions;
+			sourceTree = "<group>";
+		};
+		63A5B7751E7A5557006EA999 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				63A5B7761E7A5557006EA999 /* demo.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		63A5B7771E7A5557006EA999 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				63BC9C821E7A579D006CA13A /* UIKitDemo.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		63B568511E7A3E0400B2115E = {
 			isa = PBXGroup;
 			children = (
+				63A5B7741E7A5557006EA999 /* YJExtensions */,
 				63B5685C1E7A3E0400B2115E /* YJExtensionsGather */,
 				63B5685B1E7A3E0400B2115E /* Products */,
 			);
@@ -56,10 +97,7 @@
 			children = (
 				63B5685D1E7A3E0400B2115E /* AppDelegate.swift */,
 				63B5685F1E7A3E0400B2115E /* ViewController.swift */,
-				63B568611E7A3E0400B2115E /* Main.storyboard */,
-				63B568641E7A3E0400B2115E /* Assets.xcassets */,
-				63B568661E7A3E0400B2115E /* LaunchScreen.storyboard */,
-				63B568691E7A3E0400B2115E /* Info.plist */,
+				63A5B7731E7A552C006EA999 /* SupportFiles */,
 			);
 			path = YJExtensionsGather;
 			sourceTree = "<group>";
@@ -92,7 +130,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = Houmanager;
+				ORGANIZATIONNAME = "Houmanager Author'email:houmanager@Hotmail.com";
 				TargetAttributes = {
 					63B568591E7A3E0400B2115E = {
 						CreatedOnToolsVersion = 8.0;
@@ -138,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B568601E7A3E0400B2115E /* ViewController.swift in Sources */,
+				63BC9C831E7A579D006CA13A /* UIKitDemo.swift in Sources */,
 				63B5685E1E7A3E0400B2115E /* AppDelegate.swift in Sources */,
+				63A5B7791E7A5557006EA999 /* demo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +191,7 @@
 				63B568621E7A3E0400B2115E /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		63B568661E7A3E0400B2115E /* LaunchScreen.storyboard */ = {
@@ -159,6 +200,7 @@
 				63B568671E7A3E0400B2115E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -302,6 +344,7 @@
 				63B5686E1E7A3E0400B2115E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
