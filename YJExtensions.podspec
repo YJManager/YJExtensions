@@ -1,137 +1,209 @@
-#
-#  Be sure to run `pod spec lint YJExtensions.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
+version = "0.0.5";
 
-Pod::Spec.new do |s|
+    Pod::Spec.new do |s|
+        s.name         = "YJExtensions"
+        s.version      = version
+        s.summary      = "简介"
+        s.description      = <<-DESC
+                            描述
+                                DESC
+        s.homepage     = "https://github.com/YJManager/YJExtensions.git"
 
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
+        s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.name         = "YJExtensions"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of YJExtensions."
+        s.author       = { "houmanager" => "houmanager@Hotmail.com" }
+        s.platform     = :ios, "8.0"
+        s.ios.deployment_target = "8.0"
+        s.requires_arc = true
+        s.frameworks = 'Foundation', 'UIKit', 'CoreData', 'QuartzCore', 'CoreLocation', 'MapKit'
+        s.library       = 'resolv.9'
+        #s.libraries    = "libresolv.9.tbd"
+        s.source       = { :git => "https://github.com/YJManager/YJExtensions.git", :tag => "#{version}", :submodules => true }
+        s.public_header_files = 'YJCategories/*.{h}'
+        s.source_files        = 'YJCategories/*.{h,m}'
 
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+# UIKit 配置模块
+s.subspec 'UIKit' do |ss|
+# 1. UIApplication 配置模块
+ss.subspec 'UIApplication' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIApplication/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIApplication/*.{h}'
+end
 
-  s.homepage     = "http://EXAMPLE/YJExtensions"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+# 2. UIWindow 配置模块
+ss.subspec 'UIWindow' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIWindow/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIWindow/*.{h}'
+end
+
+# 3. UIViewController 配置模块
+ss.subspec 'UIViewController' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIViewController/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIViewController/*.{h}'
+end
+
+# 4. UIView 配置模块
+ss.subspec 'UIView' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIView/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIView/*.{h}'
+end
+
+# 5. UITableView 配置模块
+ss.subspec 'UITableView' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UITableView/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UITableView/*.{h}'
+end
+
+# 6. UITableViewCell 配置模块
+ss.subspec 'UITableViewCell' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UITableViewCell/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UITableViewCell/*.{h}'
+end
+
+# 7. UILabel 配置模块
+ss.subspec 'UILabel' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UILabel/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UILabel/*.{h}'
+end
+
+# 8. UIButton 配置模块
+ss.subspec 'UIButton' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIButton/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIButton/*.{h}'
+end
+
+# 9. UIDevice 配置模块
+ss.subspec 'UIDevice' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIDevice/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIDevice/*.{h}'
+end
+
+# 10. UINavigationController 配置模块
+ss.subspec 'UINavigationController' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UINavigationController/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UINavigationController/*.{h}'
+end
+
+# 11. UIControl 配置模块
+ss.subspec 'UIControl' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIControl/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIControl/*.{h}'
+end
+
+# 12. UIFont 配置模块
+ss.subspec 'UIFont' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIFont/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIFont/*.{h}'
+end
+
+# 13. UINavigationBar 配置模块
+ss.subspec 'UINavigationBar' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UINavigationBar/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UINavigationBar/*.{h}'
+end
+
+# 14. UIResponder 配置模块
+ss.subspec 'UIResponder' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIResponder/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIResponder/*.{h}'
+end
+
+# 15. UIBezierPath 配置模块
+ss.subspec 'UIBezierPath' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIBezierPath/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIBezierPath/*.{h}'
+end
+
+# 16. UIScrollView 配置模块
+ss.subspec 'UIScrollView' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIScrollView/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIScrollView/*.{h}'
+end
+
+# 17. UIBarButtonItem 配置模块
+ss.subspec 'UIBarButtonItem' do |sss|
+sss.source_files        = 'YJCategories/UIKit/UIBarButtonItem/*.{h,m}'
+sss.public_header_files = 'YJCategories/UIKit/UIBarButtonItem/*.{h}'
+end
+
+end
+
+# Foundation 配置模块
+s.subspec 'Foundation' do |ss|
+# 1. NSString 配置模块
+ss.subspec 'NSString' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSString/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSString/*.{h}'
+end
+
+# 2. NSArray 配置模块
+ss.subspec 'NSArray' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSArray/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSArray/*.{h}'
+end
+
+# 3. NSDictionary 配置模块
+ss.subspec 'NSDictionary' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSDictionary/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSDictionary/*.{h}'
+end
+
+# 4. NSBundle 配置模块
+ss.subspec 'NSBundle' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSBundle/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSBundle/*.{h}'
+end
+
+# 5. NSData 配置模块
+ss.subspec 'NSData' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSData/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSData/*.{h}'
+end
+
+# 6. NSIndexPath 配置模块
+ss.subspec 'NSIndexPath' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSIndexPath/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSIndexPath/*.{h}'
+end
+
+# 7. NSNotificationCenter 配置模块
+ss.subspec 'NSNotificationCenter' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSNotificationCenter/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSNotificationCenter/*.{h}'
+end
+
+# 8. NSURL 配置模块
+ss.subspec 'NSURL' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSURL/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSURL/*.{h}'
+end
+
+# 8. NSDate 配置模块
+ss.subspec 'NSDate' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSDate/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSDate/*.{h}'
+end
+
+# 9. NSDateFormatter 配置模块
+ss.subspec 'NSDateFormatter' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSDateFormatter/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSDateFormatter/*.{h}'
+end
 
 
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See http://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
+# 10. NSFileManager 配置模块
+ss.subspec 'NSFileManager' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSFileManager/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSFileManager/*.{h}'
+end
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+# 11. NSTimer 配置模块
+ss.subspec 'NSTimer' do |sss|
+sss.source_files        = 'YJCategories/Foundation/NSTimer/*.{h,m}'
+sss.public_header_files = 'YJCategories/Foundation/NSTimer/*.{h}'
+end
 
+end
 
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-
-  s.author             = { "yuejun.hou" => "8069060@qq.com" }
-  # Or just: s.author    = "yuejun.hou"
-  # s.authors            = { "yuejun.hou" => "8069060@qq.com" }
-  # s.social_media_url   = "http://twitter.com/yuejun.hou"
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
-
-
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
-  s.source       = { :git => "http://EXAMPLE/YJExtensions.git", :tag => "#{s.version}" }
-
-
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
-
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
-
-  # s.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
-
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
-
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # s.requires_arc = true
-
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
-
+#s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end
