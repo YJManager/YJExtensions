@@ -10,45 +10,63 @@ import Foundation
 
 extension NSObject{
 
-    private struct associatedKeys{
-        static var safe_observersArray = "observers"
+    private struct kAssociatedKeys{
+        static var safe_ObserversKey = "observers"
     }
     
-    
+    /** 开辟保存对象的监听对象们 */
     public var keyPathObservers: [[String : NSObject]]{
-    
-        
-    }
-    
-    private var observers: [[String : NSObject]] {
-        get {
-            if let observers = objc_getAssociatedObject(self, &associatedKeys.safe_observersArray) as? [[String : NSObject]] {
+        get{
+            if let observers = objc_getAssociatedObject(self, &kAssociatedKeys.safe_ObserversKey) as? [[String : NSObject]] {
                 return observers
             } else {
-                self.observers = [[String : NSObject]]()
-                return observers
+                self.keyPathObservers = [[String : NSObject]]()
+                return self.keyPathObservers
             }
         } set {
-            objc_setAssociatedObject(self, &associatedKeys.safe_observersArray, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &kAssociatedKeys.safe_ObserversKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
-    public func safe_addObserver(observer: NSObject, forKeyPath keyPath: String) {
-        let observerInfo = [keyPath : observer]
+    /** 安全添加监听对象 */
+    public func yj_addSafeObserver(observer: NSObject, forKeyPath keyPath: String) {
+        let observerInfo = [keyPath: observer]
         
-        if observers.indexOf({ $0 == observerInfo }) == nil {
-            observers.append(observerInfo)
-            addObserver(observer, forKeyPath: keyPath, options: .New, context: nil)
+        if self.keyPathObservers.contains(where: { (element) -> Bool in
+            if element == observerInfo{
+                return true
+            }else{
+                return false
+            }
+        }) { // 包含
+        }else{ // 添加
+            self.keyPathObservers.append(observerInfo)
+            addObserver(observer, forKeyPath: keyPath, options: .new, context: nil)
         }
     }
     
-    public func safe_removeObserver(observer: NSObject, forKeyPath keyPath: String) {
-        let observerInfo = [keyPath : observer]
-        if let index = observers.indexOf({ $0 == observerInfo}) {
-            observers.removeAtIndex(index)
-            removeObserver(observer, forKeyPath: keyPath)
+    /** 安全移除监听对象 */
+    public func yj_removeSafeObserver(observer: NSObject, forKeyPath keyPath: String) {
+        let observerInfo = [keyPath: observer]
+        if self.keyPathObservers.contains(where: { (element) -> Bool in
+            if element == observerInfo{
+                return true
+            }else{
+                return false
+            }
+        }) { // 包含
+   
+            if let index = self.keyPathObservers.index(where: { (element) -> Bool in
+                if element == observerInfo{
+                    return true
+                }else{
+                    return false
+                }
+            }) { // 安全移除
+                self.keyPathObservers.remove(at: index)
+                removeObserver(observer, forKeyPath: keyPath)
+                
+            }
         }
     }
-
-
 }
