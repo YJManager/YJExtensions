@@ -69,4 +69,15 @@ extension NSObject{
             }
         }
     }
+    
+    /** 移除所有的监听*/
+    public func yj_removeAllSafeObservers() {
+        for element: [String : NSObject] in self.keyPathObservers {
+            let observerInfo = element
+            if let keyPath = observerInfo.keys.first, let observer = observerInfo.values.first{
+                removeObserver(observer, forKeyPath: keyPath)
+            }
+        }
+        keyPathObservers.removeAll()
+    }
 }

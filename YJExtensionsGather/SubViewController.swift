@@ -10,7 +10,8 @@ import UIKit
 
 class SubViewController: UIViewController {
     
-    public var nameString = String()
+    dynamic var nameString = "houmanager"
+    private var isSelected = false
     
 
     override func viewDidLoad() {
@@ -24,7 +25,14 @@ class SubViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        nameString = "HYJ"
+        
+        if isSelected {
+            nameString = "HYJ"
+            isSelected = false
+        }else{
+            nameString = "YJManager"
+            isSelected = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +40,12 @@ class SubViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    deinit {
+        print("Before + \(keyPathObservers)")
+        yj_removeAllSafeObservers()
+        print("After + \(keyPathObservers)")
+    }
 
     /*
     // MARK: - Navigation

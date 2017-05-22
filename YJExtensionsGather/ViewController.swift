@@ -22,14 +22,16 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let subVc = SubViewController();
-        subVc .yj_addSafeObserver(observer: self, forKeyPath: "nameString")
+//        subVc.addObserver(self, forKeyPath: "nameString", options: .new, context: nil)
+        subVc.yj_addSafeObserver(observer: self, forKeyPath: "nameString")
         navigationController?.pushViewController(subVc, animated: true)
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        let nameString = change?[NSKeyValueChangeKey.newKey]
-        print(nameString ?? "---------")
-        
+        if keyPath == "nameString" {
+            let nameString = change?[NSKeyValueChangeKey.newKey] as! String
+            print("kvo-------: " + nameString)
+        }
     }
     
     override func didReceiveMemoryWarning() {
