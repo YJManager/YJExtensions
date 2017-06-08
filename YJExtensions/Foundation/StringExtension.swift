@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     // MARK:-- 讲汉语装换为拼音
     func chineseTransform2PinYin(chinese: String) -> String {

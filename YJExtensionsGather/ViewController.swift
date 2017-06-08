@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let name = "侯跃军"
+        let name = "侯跃军是个天才"
         
         let namePinYin = name.chineseTransform2PinYin(chinese: name)
         
