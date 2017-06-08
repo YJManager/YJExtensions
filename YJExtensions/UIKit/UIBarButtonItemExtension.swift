@@ -60,7 +60,7 @@ public extension UIBarButtonItem {
 fileprivate extension UIBarButtonItem {
     
     private struct AssociatedKeys {
-        static var closureKey = "Comet.UIBarButtonItem.ClosureKey"
+        static var closureKey = "com.houmanager.UIBarButtonItem.ClosureKey"
     }
     
     fileprivate var itmeClosure: UIBarButtonItemClosure? {
