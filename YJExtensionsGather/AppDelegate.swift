@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  YJExtensionsGather
 //
-//  Created by YJHou on 2016/11/16.
-//  Copyright © 2016年 Houmanager Author'email:houmanager@Hotmail.com. All rights reserved.
+//  Created by YJHou on 2016/9/7.
+//  Copyright © 2016年 侯跃军 GitHub:https://github.com/YJManager/YJExtensions . All rights reserved.
 //
 
 import UIKit

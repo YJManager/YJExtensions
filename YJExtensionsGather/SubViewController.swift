@@ -2,8 +2,8 @@
 //  SubViewController.swift
 //  YJExtensionsGather
 //
-//  Created by YJHou on 2017/5/22.
-//  Copyright © 2017年 Houmanager Author'email:houmanager@Hotmail.com. All rights reserved.
+//  Created by YJHou on 2016/9/7.
+//  Copyright © 2016年 侯跃军 GitHub:https://github.com/YJManager/YJExtensions . All rights reserved.
 //
 
 import UIKit
@@ -18,7 +18,11 @@ class SubViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.red
         
-        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Action", style: .plain, callback: { (sender) in
+            let alert = UIAlertController(title: "Action!", message: nil, preferredStyle: .alert)
+            alert.addAction(title: "确定", style: .cancel)
+            self.present(alert, animated: true, completion: nil)
+        })
         
         
         
