@@ -59,4 +59,10 @@ public extension UIColor {
         
         self.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: alpha)
     }
+    
+    /// 随机颜色颜色
+    public class func yj_randomColor() -> UIColor{
+        let randomColor = UIColor(colorLiteralRed: Float(arc4random() % 255) / 255.0, green: Float(arc4random() % 255) / 255.0, blue: Float(arc4random() % 255) / 255.0, alpha: 1)
+        return randomColor
+    }
 }
