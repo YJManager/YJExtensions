@@ -16,7 +16,7 @@ s.platform     = :ios, "8.0"
 s.ios.deployment_target = "8.0"
 s.requires_arc = true
 s.source       = { :git => "https://github.com/YJManager/YJExtensions.git", :tag => "#{version}", :submodules => true }
-s.source_files        = 'YJSwiftExtensions/*.{swift}' || 'YJSwiftExtensions/UIKit/*.{swift}' || 'YJSwiftExtensions/Foundation/*.{swift}'
+s.source_files        = 'YJSwiftExtensions/*.{swift}'
 
 # UIKit 配置模块
 s.subspec 'UIKit' do |ss|
