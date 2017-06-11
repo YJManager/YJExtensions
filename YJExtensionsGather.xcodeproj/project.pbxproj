@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631E81C01EED87DB0077E99E /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E81BF1EED87DB0077E99E /* ArrayExt.swift */; };
 		6341EF271EE91A9800FF119F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6341EF201EE91A9800FF119F /* Assets.xcassets */; };
 		6341EF2E1EE91B2300FF119F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6341EF2B1EE91B2300FF119F /* LaunchScreen.storyboard */; };
 		6341EF2F1EE91B2300FF119F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6341EF2C1EE91B2300FF119F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		631E81BF1EED87DB0077E99E /* ArrayExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		6341EF201EE91A9800FF119F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6341EF2B1EE91B2300FF119F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6341EF2C1EE91B2300FF119F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				638494DB1EEBA2FF00DA08F1 /* StringExtension.swift */,
 				638494DC1EEBA2FF00DA08F1 /* YJBundleExt.swift */,
 				638494DD1EEBA2FF00DA08F1 /* YJKVObservingExtension.swift */,
+				631E81BF1EED87DB0077E99E /* ArrayExt.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -179,7 +182,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "侯跃军 Author'email:houmanager@Hotmail.com";
+				ORGANIZATIONNAME = "侯跃军 GitHub:https://github.com/YJManager/YJExtensions ";
 				TargetAttributes = {
 					63B568591E7A3E0400B2115E = {
 						CreatedOnToolsVersion = 8.0;
@@ -230,6 +233,7 @@
 				638494F71EEBA2FF00DA08F1 /* UIViewControllerExtension.swift in Sources */,
 				638494EC1EEBA2FF00DA08F1 /* StringExtension.swift in Sources */,
 				638494ED1EEBA2FF00DA08F1 /* YJBundleExt.swift in Sources */,
+				631E81C01EED87DB0077E99E /* ArrayExt.swift in Sources */,
 				638494F41EEBA2FF00DA08F1 /* UIResponderExtension.swift in Sources */,
 				638494F61EEBA2FF00DA08F1 /* UITextFieldExtension.swift in Sources */,
 				63F2ADC81ED28DA400B4BC89 /* SubViewController.swift in Sources */,
