@@ -20,9 +20,9 @@ class ViewController: UIViewController {
         
         print(namePinYin)
         
-        let _ = UIStoryboard.main.create() as ViewController
+        let _ = UIStoryboard.yj_main.yj_loadViewController() as ViewController
         
-        let vc = ViewController.fromSB()
+        let vc = ViewController.yj_fromSB()
         print(vc)
         
         DispatchQueue.global().asyncAfter(delay: 2, execute:{

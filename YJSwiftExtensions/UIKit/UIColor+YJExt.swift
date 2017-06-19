@@ -1,5 +1,5 @@
 //
-//  UIColorExtension.swift
+//  UIColor+YJExt.swift
 //  YJExtensionsGather
 //
 //  Created by YJHou on 2016/9/7.
@@ -9,6 +9,16 @@
 import UIKit
 
 public extension UIColor {
+    
+    /// rgba
+    public static func rgba(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, _ a: CGFloat) -> UIColor {
+        return UIColor(red: r/255, green: g/255, blue: b/255, alpha: a)
+    }
+    
+    /// rgb
+    public static func rgb(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat) -> UIColor {
+        return rgba(r, g, b, 1.0)
+    }
     
     /**
      *  使用16进制字符串创建颜色
@@ -61,8 +71,9 @@ public extension UIColor {
     }
     
     /// 随机颜色颜色
-    public class func yj_randomColor() -> UIColor{
+    public static func yj_randomColor() -> UIColor{
         let randomColor = UIColor(colorLiteralRed: Float(arc4random() % 255) / 255.0, green: Float(arc4random() % 255) / 255.0, blue: Float(arc4random() % 255) / 255.0, alpha: 1)
         return randomColor
     }
 }
+
