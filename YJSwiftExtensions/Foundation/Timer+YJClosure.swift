@@ -1,5 +1,5 @@
 //
-//  Timer+YJExt.swift
+//  Timer+YJClosure.swift
 //  YJExtensionsGather
 //
 //  Created by YJHou on 2016/9/7.

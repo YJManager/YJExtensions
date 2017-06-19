@@ -18,7 +18,7 @@
 		634870131EF79CCA001A1950 /* NSObject+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634870121EF79CCA001A1950 /* NSObject+Keyboard.swift */; };
 		634870151EF79D32001A1950 /* NSObject+YJSuperExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634870141EF79D32001A1950 /* NSObject+YJSuperExt.swift */; };
 		634870171EF7A01D001A1950 /* UIColor+YJExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634870161EF7A01D001A1950 /* UIColor+YJExt.swift */; };
-		634870191EF7A120001A1950 /* Timer+YJExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634870181EF7A120001A1950 /* Timer+YJExt.swift */; };
+		6348701B1EF7A4BE001A1950 /* Timer+YJClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348701A1EF7A4BE001A1950 /* Timer+YJClosure.swift */; };
 		638494E91EEBA2FF00DA08F1 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494D81EEBA2FF00DA08F1 /* DateExt.swift */; };
 		638494EA1EEBA2FF00DA08F1 /* DispatchQueueExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494D91EEBA2FF00DA08F1 /* DispatchQueueExt.swift */; };
 		638494EC1EEBA2FF00DA08F1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494DB1EEBA2FF00DA08F1 /* StringExtension.swift */; };
@@ -50,7 +50,7 @@
 		634870121EF79CCA001A1950 /* NSObject+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Keyboard.swift"; sourceTree = "<group>"; };
 		634870141EF79D32001A1950 /* NSObject+YJSuperExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+YJSuperExt.swift"; sourceTree = "<group>"; };
 		634870161EF7A01D001A1950 /* UIColor+YJExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+YJExt.swift"; sourceTree = "<group>"; };
-		634870181EF7A120001A1950 /* Timer+YJExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+YJExt.swift"; sourceTree = "<group>"; };
+		6348701A1EF7A4BE001A1950 /* Timer+YJClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+YJClosure.swift"; sourceTree = "<group>"; };
 		638494D81EEBA2FF00DA08F1 /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		638494D91EEBA2FF00DA08F1 /* DispatchQueueExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueExt.swift; sourceTree = "<group>"; };
 		638494DB1EEBA2FF00DA08F1 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				631E81BF1EED87DB0077E99E /* ArrayExt.swift */,
 				634870121EF79CCA001A1950 /* NSObject+Keyboard.swift */,
 				634870141EF79D32001A1950 /* NSObject+YJSuperExt.swift */,
-				634870181EF7A120001A1950 /* Timer+YJExt.swift */,
+				6348701A1EF7A4BE001A1950 /* Timer+YJClosure.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -256,13 +256,13 @@
 				63B5685E1E7A3E0400B2115E /* AppDelegate.swift in Sources */,
 				634870171EF7A01D001A1950 /* UIColor+YJExt.swift in Sources */,
 				638494EF1EEBA2FF00DA08F1 /* UIAlertControllerExt.swift in Sources */,
+				6348701B1EF7A4BE001A1950 /* Timer+YJClosure.swift in Sources */,
 				638494F01EEBA2FF00DA08F1 /* UIBarButtonItemExtension.swift in Sources */,
 				638494F81EEBA2FF00DA08F1 /* UIViewExtension.swift in Sources */,
 				638494FA1EEBA63400DA08F1 /* YJSwiftExtensions.swift in Sources */,
 				638494F51EEBA2FF00DA08F1 /* UIScrollViewExtension.swift in Sources */,
 				634870111EF79B53001A1950 /* UIViewController+YJExt.swift in Sources */,
 				638494E91EEBA2FF00DA08F1 /* DateExt.swift in Sources */,
-				634870191EF7A120001A1950 /* Timer+YJExt.swift in Sources */,
 				638494F31EEBA2FF00DA08F1 /* UINavigationControllerExt.swift in Sources */,
 				638494F21EEBA2FF00DA08F1 /* UINavigationBarExt.swift in Sources */,
 			);
