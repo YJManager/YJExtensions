@@ -33,6 +33,7 @@
 		638494F61EEBA2FF00DA08F1 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494E61EEBA2FF00DA08F1 /* UITextFieldExtension.swift */; };
 		638494F81EEBA2FF00DA08F1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494E81EEBA2FF00DA08F1 /* UIViewExtension.swift */; };
 		638494FA1EEBA63400DA08F1 /* YJSwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494F91EEBA63400DA08F1 /* YJSwiftExtensions.swift */; };
+		639064551F05E6D600562407 /* UIImage+YJExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639064541F05E6D600562407 /* UIImage+YJExt.swift */; };
 		63B5685E1E7A3E0400B2115E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5685D1E7A3E0400B2115E /* AppDelegate.swift */; };
 		63B568601E7A3E0400B2115E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5685F1E7A3E0400B2115E /* ViewController.swift */; };
 		63F2ADC81ED28DA400B4BC89 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2ADC71ED28DA400B4BC89 /* SubViewController.swift */; };
@@ -65,6 +66,7 @@
 		638494E61EEBA2FF00DA08F1 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		638494E81EEBA2FF00DA08F1 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		638494F91EEBA63400DA08F1 /* YJSwiftExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSwiftExtensions.swift; sourceTree = "<group>"; };
+		639064541F05E6D600562407 /* UIImage+YJExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+YJExt.swift"; sourceTree = "<group>"; };
 		63B5685A1E7A3E0400B2115E /* YJExtensionsGather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJExtensionsGather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B5685D1E7A3E0400B2115E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B5685F1E7A3E0400B2115E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				6348700E1EF7826B001A1950 /* UINib+YJExt.swift */,
 				634870101EF79B53001A1950 /* UIViewController+YJExt.swift */,
 				634870161EF7A01D001A1950 /* UIColor+YJExt.swift */,
+				639064541F05E6D600562407 /* UIImage+YJExt.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				638494F01EEBA2FF00DA08F1 /* UIBarButtonItemExtension.swift in Sources */,
 				638494F81EEBA2FF00DA08F1 /* UIViewExtension.swift in Sources */,
 				638494FA1EEBA63400DA08F1 /* YJSwiftExtensions.swift in Sources */,
+				639064551F05E6D600562407 /* UIImage+YJExt.swift in Sources */,
 				638494F51EEBA2FF00DA08F1 /* UIScrollViewExtension.swift in Sources */,
 				634870111EF79B53001A1950 /* UIViewController+YJExt.swift in Sources */,
 				638494E91EEBA2FF00DA08F1 /* DateExt.swift in Sources */,
