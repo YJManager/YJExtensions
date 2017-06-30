@@ -1,11 +1,11 @@
-version = "0.0.1";
+version = "0.0.2";
 
 Pod::Spec.new do |s|
 s.name         = "YJSwiftExtensions"
 s.version      = version
-s.summary      = "简介"
+s.summary      = "YJSwiftExtensions is commonly used extensions of swift"
 s.description      = <<-DESC
-YJSwiftExtensions is commonly used extensions of swift
+YJSwiftExtensions is commonly used extensions of swift, welcome to issue.
 DESC
 s.homepage     = "https://github.com/YJManager/YJExtensions"
 
