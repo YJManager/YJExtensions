@@ -52,3 +52,12 @@ public extension Bundle {
         return view
     }
 }
+
+extension NSObject {
+    /// 获取去除了模块名称的类名
+    internal class var classNameWithoutModule: String {
+        let name = self.classForCoder().description()
+        let compments = name.components(separatedBy: ".")
+        return compments.last!
+    }
+}
