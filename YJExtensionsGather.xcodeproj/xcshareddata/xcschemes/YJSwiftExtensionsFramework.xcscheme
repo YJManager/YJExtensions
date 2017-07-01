@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63A25EFB1F0759B800EC266F"
-               BuildableName = "YJSwiftExtensionsFramework.framework"
+               BuildableName = "YJSwiftExtensions.framework"
                BlueprintName = "YJSwiftExtensionsFramework"
                ReferencedContainer = "container:YJExtensionsGather.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63A25EFB1F0759B800EC266F"
-            BuildableName = "YJSwiftExtensionsFramework.framework"
+            BuildableName = "YJSwiftExtensions.framework"
             BlueprintName = "YJSwiftExtensionsFramework"
             ReferencedContainer = "container:YJExtensionsGather.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63A25EFB1F0759B800EC266F"
-            BuildableName = "YJSwiftExtensionsFramework.framework"
+            BuildableName = "YJSwiftExtensions.framework"
             BlueprintName = "YJSwiftExtensionsFramework"
             ReferencedContainer = "container:YJExtensionsGather.xcodeproj">
          </BuildableReference>
