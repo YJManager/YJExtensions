@@ -30,7 +30,7 @@ YJExtensions 常用扩展集合
 
 1. Add YJSwiftExtensions to your Cartfile. </br>
 ```bash
-    github "YJManager/YJSwiftExtensions
+    github "YJManager/YJSwiftExtensions"
 ```
 2. Run 
 ```bash
