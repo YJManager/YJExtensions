@@ -19,12 +19,13 @@
 		634870151EF79D32001A1950 /* NSObject+YJSuperExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634870141EF79D32001A1950 /* NSObject+YJSuperExt.swift */; };
 		634870171EF7A01D001A1950 /* UIColor+YJExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634870161EF7A01D001A1950 /* UIColor+YJExt.swift */; };
 		6348701B1EF7A4BE001A1950 /* Timer+YJClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348701A1EF7A4BE001A1950 /* Timer+YJClosure.swift */; };
+		63839C461F0F912C0017B1EF /* UIAlertController+YJExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63839C451F0F912C0017B1EF /* UIAlertController+YJExt.swift */; };
+		63839C471F0F912C0017B1EF /* UIAlertController+YJExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63839C451F0F912C0017B1EF /* UIAlertController+YJExt.swift */; };
 		638494E91EEBA2FF00DA08F1 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494D81EEBA2FF00DA08F1 /* DateExt.swift */; };
 		638494EA1EEBA2FF00DA08F1 /* DispatchQueueExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494D91EEBA2FF00DA08F1 /* DispatchQueueExt.swift */; };
 		638494EC1EEBA2FF00DA08F1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494DB1EEBA2FF00DA08F1 /* StringExtension.swift */; };
 		638494ED1EEBA2FF00DA08F1 /* YJBundleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494DC1EEBA2FF00DA08F1 /* YJBundleExt.swift */; };
 		638494EE1EEBA2FF00DA08F1 /* YJKVObservingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494DD1EEBA2FF00DA08F1 /* YJKVObservingExtension.swift */; };
-		638494EF1EEBA2FF00DA08F1 /* UIAlertControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494DF1EEBA2FF00DA08F1 /* UIAlertControllerExt.swift */; };
 		638494F01EEBA2FF00DA08F1 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494E01EEBA2FF00DA08F1 /* UIBarButtonItemExtension.swift */; };
 		638494F21EEBA2FF00DA08F1 /* UINavigationBarExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494E21EEBA2FF00DA08F1 /* UINavigationBarExt.swift */; };
 		638494F31EEBA2FF00DA08F1 /* UINavigationControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494E31EEBA2FF00DA08F1 /* UINavigationControllerExt.swift */; };
@@ -44,7 +45,6 @@
 		63A25F0F1F0759FC00EC266F /* NSObject+Keyboard.swift in Headers */ = {isa = PBXBuildFile; fileRef = 634870121EF79CCA001A1950 /* NSObject+Keyboard.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A25F101F0759FC00EC266F /* NSObject+YJSuperExt.swift in Headers */ = {isa = PBXBuildFile; fileRef = 634870141EF79D32001A1950 /* NSObject+YJSuperExt.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A25F111F0759FC00EC266F /* Timer+YJClosure.swift in Headers */ = {isa = PBXBuildFile; fileRef = 6348701A1EF7A4BE001A1950 /* Timer+YJClosure.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		63A25F121F0759FC00EC266F /* UIAlertControllerExt.swift in Headers */ = {isa = PBXBuildFile; fileRef = 638494DF1EEBA2FF00DA08F1 /* UIAlertControllerExt.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A25F131F0759FC00EC266F /* UIBarButtonItemExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 638494E01EEBA2FF00DA08F1 /* UIBarButtonItemExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A25F141F0759FC00EC266F /* UINavigationBarExt.swift in Headers */ = {isa = PBXBuildFile; fileRef = 638494E21EEBA2FF00DA08F1 /* UINavigationBarExt.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A25F151F0759FC00EC266F /* UINavigationControllerExt.swift in Headers */ = {isa = PBXBuildFile; fileRef = 638494E31EEBA2FF00DA08F1 /* UINavigationControllerExt.swift */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,7 +68,6 @@
 		63A25F271F075A1B00EC266F /* NSObject+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634870121EF79CCA001A1950 /* NSObject+Keyboard.swift */; };
 		63A25F281F075A1B00EC266F /* NSObject+YJSuperExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634870141EF79D32001A1950 /* NSObject+YJSuperExt.swift */; };
 		63A25F291F075A1B00EC266F /* Timer+YJClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348701A1EF7A4BE001A1950 /* Timer+YJClosure.swift */; };
-		63A25F2A1F075A1B00EC266F /* UIAlertControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494DF1EEBA2FF00DA08F1 /* UIAlertControllerExt.swift */; };
 		63A25F2B1F075A1B00EC266F /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494E01EEBA2FF00DA08F1 /* UIBarButtonItemExtension.swift */; };
 		63A25F2C1F075A1B00EC266F /* UINavigationBarExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494E21EEBA2FF00DA08F1 /* UINavigationBarExt.swift */; };
 		63A25F2D1F075A1B00EC266F /* UINavigationControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638494E31EEBA2FF00DA08F1 /* UINavigationControllerExt.swift */; };
@@ -101,12 +100,12 @@
 		634870141EF79D32001A1950 /* NSObject+YJSuperExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+YJSuperExt.swift"; sourceTree = "<group>"; };
 		634870161EF7A01D001A1950 /* UIColor+YJExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+YJExt.swift"; sourceTree = "<group>"; };
 		6348701A1EF7A4BE001A1950 /* Timer+YJClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+YJClosure.swift"; sourceTree = "<group>"; };
+		63839C451F0F912C0017B1EF /* UIAlertController+YJExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+YJExt.swift"; sourceTree = "<group>"; };
 		638494D81EEBA2FF00DA08F1 /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		638494D91EEBA2FF00DA08F1 /* DispatchQueueExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueExt.swift; sourceTree = "<group>"; };
 		638494DB1EEBA2FF00DA08F1 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		638494DC1EEBA2FF00DA08F1 /* YJBundleExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJBundleExt.swift; sourceTree = "<group>"; };
 		638494DD1EEBA2FF00DA08F1 /* YJKVObservingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJKVObservingExtension.swift; sourceTree = "<group>"; };
-		638494DF1EEBA2FF00DA08F1 /* UIAlertControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExt.swift; sourceTree = "<group>"; };
 		638494E01EEBA2FF00DA08F1 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		638494E21EEBA2FF00DA08F1 /* UINavigationBarExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarExt.swift; sourceTree = "<group>"; };
 		638494E31EEBA2FF00DA08F1 /* UINavigationControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExt.swift; sourceTree = "<group>"; };
@@ -173,7 +172,7 @@
 		638494DE1EEBA2FF00DA08F1 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				638494DF1EEBA2FF00DA08F1 /* UIAlertControllerExt.swift */,
+				63839C451F0F912C0017B1EF /* UIAlertController+YJExt.swift */,
 				638494E01EEBA2FF00DA08F1 /* UIBarButtonItemExtension.swift */,
 				638494E21EEBA2FF00DA08F1 /* UINavigationBarExt.swift */,
 				638494E31EEBA2FF00DA08F1 /* UINavigationControllerExt.swift */,
@@ -257,7 +256,6 @@
 				63A25F0F1F0759FC00EC266F /* NSObject+Keyboard.swift in Headers */,
 				63A25F101F0759FC00EC266F /* NSObject+YJSuperExt.swift in Headers */,
 				63A25F111F0759FC00EC266F /* Timer+YJClosure.swift in Headers */,
-				63A25F121F0759FC00EC266F /* UIAlertControllerExt.swift in Headers */,
 				63A25F131F0759FC00EC266F /* UIBarButtonItemExtension.swift in Headers */,
 				63A25F141F0759FC00EC266F /* UINavigationBarExt.swift in Headers */,
 				63A25F151F0759FC00EC266F /* UINavigationControllerExt.swift in Headers */,
@@ -381,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A25F211F075A1B00EC266F /* DateExt.swift in Sources */,
+				63839C471F0F912C0017B1EF /* UIAlertController+YJExt.swift in Sources */,
 				63A25F221F075A1B00EC266F /* DispatchQueueExt.swift in Sources */,
 				63A25F231F075A1B00EC266F /* StringExtension.swift in Sources */,
 				63A25F241F075A1B00EC266F /* YJBundleExt.swift in Sources */,
@@ -389,7 +388,6 @@
 				63A25F271F075A1B00EC266F /* NSObject+Keyboard.swift in Sources */,
 				63A25F281F075A1B00EC266F /* NSObject+YJSuperExt.swift in Sources */,
 				63A25F291F075A1B00EC266F /* Timer+YJClosure.swift in Sources */,
-				63A25F2A1F075A1B00EC266F /* UIAlertControllerExt.swift in Sources */,
 				63A25F2B1F075A1B00EC266F /* UIBarButtonItemExtension.swift in Sources */,
 				63A25F2C1F075A1B00EC266F /* UINavigationBarExt.swift in Sources */,
 				63A25F2D1F075A1B00EC266F /* UINavigationControllerExt.swift in Sources */,
@@ -424,10 +422,10 @@
 				638494F61EEBA2FF00DA08F1 /* UITextFieldExtension.swift in Sources */,
 				63F2ADC81ED28DA400B4BC89 /* SubViewController.swift in Sources */,
 				638494EA1EEBA2FF00DA08F1 /* DispatchQueueExt.swift in Sources */,
+				63839C461F0F912C0017B1EF /* UIAlertController+YJExt.swift in Sources */,
 				6348700D1EF77F00001A1950 /* UIStoryboard+YJExt.swift in Sources */,
 				63B5685E1E7A3E0400B2115E /* AppDelegate.swift in Sources */,
 				634870171EF7A01D001A1950 /* UIColor+YJExt.swift in Sources */,
-				638494EF1EEBA2FF00DA08F1 /* UIAlertControllerExt.swift in Sources */,
 				6348701B1EF7A4BE001A1950 /* Timer+YJClosure.swift in Sources */,
 				638494F01EEBA2FF00DA08F1 /* UIBarButtonItemExtension.swift in Sources */,
 				638494F81EEBA2FF00DA08F1 /* UIViewExtension.swift in Sources */,

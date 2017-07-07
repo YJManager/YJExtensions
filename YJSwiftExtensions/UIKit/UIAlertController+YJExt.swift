@@ -1,5 +1,5 @@
 //
-//  UIAlertControllerExt.swift
+//  UIAlertController+YJExt.swift
 //  YJExtensionsGather
 //
 //  Created by YJHou on 2016/9/7.
@@ -15,3 +15,4 @@ public extension UIAlertController {
         self.addAction(action)
     }
 }
+
