@@ -1,5 +1,5 @@
 //
-//  StringExtension.swift
+//  StringExt.swift
 //  YJExtensionsGather
 //
 //  Created by YJHou on 2016/9/7.
@@ -8,51 +8,44 @@
 
 import UIKit
 
-// MARK: - RegEx 正则表达式验证
+// MARK: - RegExt
 public extension String {
-    /// 邮箱
+    
     public var yj_regexEmail: String {
         return "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*"
     }
     
-    /// 电话号码
     public var yj_regexPhone: String {
         return "^(([+])\\d{1,4})*(\\d{3,4})*\\d{7,8}(\\d{1,4})*$"
     }
     
-    /// 手机号码
     public var yj_regexMobile: String {
         return "^(([+])\\d{1,4})*1[0-9][0-9]\\d{8}$"
     }
     
-    /// 是否匹配正则表达式
     public func yj_regexMatch(_ regex: String) -> Bool {
         let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
         return predicate.evaluate(with: self)
     }
     
-    /// 字符串是否是邮箱
     public var yj_isEmail: Bool {
         return yj_regexMatch(yj_regexEmail)
     }
     
-    /// 是否是电话号码
     public var yj_isPhone: Bool {
         return yj_regexMatch(yj_regexPhone)
     }
     
-    /// 是否是手机号码
     public var yj_isMobile: Bool {
         return yj_regexMatch(yj_regexMobile)
     }
     
-    /// 是否是电话或者手机
     public var isPhoneOrMobile: Bool {
         return yj_isPhone || yj_isMobile
     }
 }
 
-// MARK: - URL 
+// MARK: - URL
 public extension String {
     /// URL 编码
     public var yj_URLEncode: String? {
@@ -151,3 +144,4 @@ public extension String {
         return pinyinString.substring(to: 1)
     }
 }
+

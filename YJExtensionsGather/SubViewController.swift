@@ -20,7 +20,7 @@ class SubViewController: UIViewController {
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Action", style: .plain, callback: { (sender) in
             let alert = UIAlertController(title: "Action!", message: nil, preferredStyle: .alert)
-            alert.addAction(title: "确定", style: .cancel)
+            alert.addAlertAction(title: "确定", style: .cancel)
             self.present(alert, animated: true, completion: nil)
         })
         
@@ -28,14 +28,7 @@ class SubViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        if isSelected {
-            nameString = "HYJ"
-            isSelected = false
-        }else{
-            nameString = "YJManager"
-            isSelected = true
-        }
+        navigationController?.pop()
     }
 
     override func didReceiveMemoryWarning() {

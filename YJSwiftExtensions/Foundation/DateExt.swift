@@ -19,7 +19,7 @@ public extension Date {
         case second
     }
     
-    /// 从日期字符串创建日期对象
+    /// StringDate-to-Date
     public init?(string: String, format: String = "yyyy-MM-dd HH:mm:ss", timeZone: TimeZone = TimeZone.current) {
         
         let formatter = DateFormatter()
@@ -33,7 +33,12 @@ public extension Date {
         }
     }
     
-    /// 将日期转换为指定格式的字符串
+    /// Date-to-String
+    ///
+    /// - Parameters:
+    ///   - format: Default is yyyy-MM-dd HH:mm:ss
+    ///   - timeZone: Default is current
+    /// - Returns: string date
     public func string(format: String = "yyyy-MM-dd HH:mm:ss", timeZone: TimeZone = TimeZone.current) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format
@@ -41,8 +46,12 @@ public extension Date {
         return formatter.string(from: self)
     }
     
-    /// 日期计算，返回当前日期加上指定单位值之后的日期，会自动进位或减位
-    /// 返回计算后的新日期
+    /// Date Calculation
+    ///
+    /// - Parameters:
+    ///   - value: step
+    ///   - unit: enum
+    /// - Returns: new Date
     public func add(_ value: Int, _ unit: DateUnit) -> Date {
         
         let component = unit.componentValue()
@@ -57,8 +66,12 @@ public extension Date {
         return date ?? self
     }
     
-    /// 将指定单位设置为指定的值，返回修改后的新日期
-    /// 如果设置的值大于当前单位的最大值或者小于最小值，会自动进位或减位
+    /// Setting Date
+    ///
+    /// - Parameters:
+    ///   - unit: enum
+    ///   - value: setp
+    /// - Returns: new Date
     public func set(_ unit: DateUnit, to value: Int) -> Date {
         let component = unit.componentValue()
         let calendar = Calendar.current
@@ -70,7 +83,7 @@ public extension Date {
         return date ?? self
     }
     
-    /// 忽略精确时间（时／分／秒）的日期
+    /// withoutTime(H:m:s)
     public var withoutTime: Date {
         let calendar = Calendar.current
         var components = calendar.dateComponents([.year, .month, .day], from: self)
@@ -80,7 +93,10 @@ public extension Date {
         return date ?? self
     }
     
-    /// 某个单位的值
+    /// Individual Value
+    ///
+    /// - Parameter unit: enum
+    /// - Returns: value
     public func unit(_ unit: DateUnit) -> Int {
         let component = unit.componentValue()
         let calendar = Calendar.current
@@ -89,7 +105,7 @@ public extension Date {
         return components.value(for: component) ?? 0
     }
     
-    /// 周几，周日为0
+    /// weekday
     public var weekday: Int {
         let calendar = Calendar.current
         var components = calendar.dateComponents([.weekday], from: self)
@@ -100,12 +116,12 @@ public extension Date {
 
 public extension TimeZone {
     
-    /// 中国时区(东8区)
+    /// china TimeZone
     public static var china: TimeZone {
         return TimeZone(identifier: "Asia/Shanghai")!
     }
     
-    // UTC 0 时区
+    // UTC 0 TimeZone
     public static var zero: TimeZone {
         return TimeZone(abbreviation: "UTC")!
     }
@@ -133,12 +149,12 @@ fileprivate extension Date.DateUnit {
 
 public extension Locale {
     
-    /// 中国地区
+    /// china Locale
     public static var china: Locale {
         return Locale(identifier: "zh_Hans_CN")
     }
     
-    /// 美国地区
+    /// usa Locale
     public static var usa: Locale {
         return Locale(identifier: "es_US")
     }
