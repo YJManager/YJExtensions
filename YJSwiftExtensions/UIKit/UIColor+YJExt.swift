@@ -75,5 +75,11 @@ public extension UIColor {
         let randomColor = UIColor(colorLiteralRed: Float(arc4random() % 255) / 255.0, green: Float(arc4random() % 255) / 255.0, blue: Float(arc4random() % 255) / 255.0, alpha: 1)
         return randomColor
     }
+    
+    /// System default bar tint color
+    public class var defaultNavBarTintColor: UIColor {
+        return UIColor(red: 0, green: 0.478431, blue: 1, alpha: 1.0)
+    }
+
 }
 

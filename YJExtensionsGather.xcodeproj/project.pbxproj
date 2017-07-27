@@ -15,6 +15,10 @@
 		63297F8A1F29D01D0080F768 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63297F881F29D01D0080F768 /* MainViewController.swift */; };
 		63297F8F1F29D9250080F768 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63297F8E1F29D9250080F768 /* StringExt.swift */; };
 		63297F901F29D9250080F768 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63297F8E1F29D9250080F768 /* StringExt.swift */; };
+		63297F921F29EDFE0080F768 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63297F911F29EDFE0080F768 /* ProfileViewController.swift */; };
+		63297F931F29EDFE0080F768 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63297F911F29EDFE0080F768 /* ProfileViewController.swift */; };
+		63297F951F29F0410080F768 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63297F941F29F0410080F768 /* ProfileViewController.xib */; };
+		63297F961F29F0410080F768 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63297F941F29F0410080F768 /* ProfileViewController.xib */; };
 		6341EF271EE91A9800FF119F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6341EF201EE91A9800FF119F /* Assets.xcassets */; };
 		6341EF2E1EE91B2300FF119F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6341EF2B1EE91B2300FF119F /* LaunchScreen.storyboard */; };
 		6341EF2F1EE91B2300FF119F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6341EF2C1EE91B2300FF119F /* Main.storyboard */; };
@@ -96,6 +100,8 @@
 		63297F851F29CE900080F768 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		63297F881F29D01D0080F768 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		63297F8E1F29D9250080F768 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		63297F911F29EDFE0080F768 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		63297F941F29F0410080F768 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		6341EF201EE91A9800FF119F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6341EF2B1EE91B2300FF119F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6341EF2C1EE91B2300FF119F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -217,6 +223,7 @@
 			children = (
 				6341EF2B1EE91B2300FF119F /* LaunchScreen.storyboard */,
 				6341EF2C1EE91B2300FF119F /* Main.storyboard */,
+				63297F941F29F0410080F768 /* ProfileViewController.xib */,
 				6341EF2D1EE91B2300FF119F /* YJExtensionsGather-Info.plist */,
 				6341EF201EE91A9800FF119F /* Assets.xcassets */,
 			);
@@ -250,6 +257,7 @@
 				63B5685D1E7A3E0400B2115E /* AppDelegate.swift */,
 				63297F881F29D01D0080F768 /* MainViewController.swift */,
 				63F2ADC71ED28DA400B4BC89 /* SubViewController.swift */,
+				63297F911F29EDFE0080F768 /* ProfileViewController.swift */,
 				63A5B7731E7A552C006EA999 /* SupportFiles */,
 			);
 			path = YJExtensionsGather;
@@ -371,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63297F961F29F0410080F768 /* ProfileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63297F951F29F0410080F768 /* ProfileViewController.xib in Resources */,
 				6341EF2F1EE91B2300FF119F /* Main.storyboard in Resources */,
 				63297F831F29CDD70080F768 /* YJSwiftExtensions.podspec in Resources */,
 				6341EF271EE91A9800FF119F /* Assets.xcassets in Resources */,
@@ -399,6 +409,7 @@
 				63A25F221F075A1B00EC266F /* DispatchQueueExt.swift in Sources */,
 				63A25F241F075A1B00EC266F /* YJBundleExt.swift in Sources */,
 				63A25F251F075A1B00EC266F /* YJKVObservingExtension.swift in Sources */,
+				63297F931F29EDFE0080F768 /* ProfileViewController.swift in Sources */,
 				63A25F261F075A1B00EC266F /* ArrayExt.swift in Sources */,
 				63A25F271F075A1B00EC266F /* NSObject+Keyboard.swift in Sources */,
 				63A25F281F075A1B00EC266F /* NSObject+YJSuperExt.swift in Sources */,
@@ -439,6 +450,7 @@
 				638494F61EEBA2FF00DA08F1 /* UITextFieldExtension.swift in Sources */,
 				63F2ADC81ED28DA400B4BC89 /* SubViewController.swift in Sources */,
 				63297F891F29D01D0080F768 /* MainViewController.swift in Sources */,
+				63297F921F29EDFE0080F768 /* ProfileViewController.swift in Sources */,
 				638494EA1EEBA2FF00DA08F1 /* DispatchQueueExt.swift in Sources */,
 				63839C461F0F912C0017B1EF /* UIAlertController+YJExt.swift in Sources */,
 				6348700D1EF77F00001A1950 /* UIStoryboard+YJExt.swift in Sources */,
